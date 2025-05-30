@@ -746,6 +746,13 @@
             margin-top: 2rem;
         }
 
+        @media (max-width: 768px) {
+            .contact-details {
+                gap: 1.5rem;
+                margin-top: 1.5rem;
+            }
+        }
+
         .contact-item {
             background: rgba(255,255,255,0.1);
             backdrop-filter: blur(20px);
@@ -753,6 +760,15 @@
             border-radius: 20px;
             padding: 2rem;
             transition: var(--transition-fast);
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .contact-item {
+                padding: 1.5rem;
+                border-radius: 15px;
+            }
         }
 
         .contact-item:hover {
@@ -779,6 +795,15 @@
             border: 1px solid rgba(255,255,255,0.2);
             border-radius: 25px;
             padding: 3rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 768px) {
+            .contact-form {
+                padding: 2rem 1.5rem;
+                border-radius: 20px;
+            }
         }
 
         .form-group {
@@ -981,6 +1006,22 @@
 
             .contact-content {
                 grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-details {
+                gap: 1.5rem;
+            }
+
+            .contact-item {
+                padding: 1.5rem;
+                margin: 0;
+                border-radius: 15px;
+            }
+
+            .contact-form {
+                padding: 2rem 1.5rem;
+                border-radius: 20px;
             }
 
             .stats-grid {
@@ -988,7 +1029,23 @@
             }
 
             .container {
-                padding: 0 1rem;
+                padding: 0 0.8rem;
+            }
+
+            .contact {
+                padding: 4rem 0;
+            }
+
+            .contact-info h2 {
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .contact-info p {
+                text-align: center;
+                margin-bottom: 2rem;
+                font-size: 1rem;
             }
         }
 
@@ -1013,6 +1070,31 @@
             
             .service-card {
                 min-width: unset;
+            }
+
+            .container {
+                padding: 0 0.5rem;
+            }
+
+            .contact-item {
+                padding: 1.2rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem 1rem;
+            }
+
+            .hero-title {
+                font-size: 2.2rem;
+            }
+
+            .hero-description {
+                font-size: 0.95rem;
+            }
+
+            .btn {
+                width: 260px;
+                padding: 0.9rem 1.5rem;
             }
         }
 
